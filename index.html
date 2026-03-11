@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>High-Precision Throttle Shafts for Automotive & Aerospace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f0f2f5;
+      --steel: #2c3e50;
+      --accent: #b8860b;
+      --muted: #5a6a7a;
+      --rule: #c8d0da;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.85;
+      min-height: 100vh;
+      padding: 60px 20px;
+      background-image:
+        radial-gradient(ellipse at top left, #dde3ec 0%, transparent 60%),
+        radial-gradient(ellipse at bottom right, #e4e8ef 0%, transparent 60%);
+    }
+
+    .page-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid var(--rule);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.10), 0 0 0 6px #fff, 0 0 0 7px var(--rule);
+      padding: 64px 72px;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .kicker {
+      font-family: 'Source Serif 4', serif;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--steel);
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .byline {
+      font-size: 12.5px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 10px 0;
+      margin: 22px 0 32px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--steel);
+      margin: 42px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    h3 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      margin: 28px 0 10px;
+    }
+
+    p {
+      font-size: 1.02rem;
+      color: #2a2a2a;
+      margin-bottom: 20px;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    figure {
+      margin: 36px -20px 10px;
+    }
+
+    .article-image {
+      width: 100%;
+      display: block;
+      max-height: 400px;
+      object-fit: cover;
+      border-top: 3px solid var(--accent);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    figcaption {
+      font-size: 11.5px;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 28px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .read-more:hover { color: var(--steel); border-color: var(--steel); }
+    .read-more::after { content: "→"; font-size: 1rem; }
+
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.2rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.78;
+      margin: 6px 10px 0 0;
+      color: var(--accent);
+    }
+
+    .author-box {
+      margin-top: 48px;
+      padding: 24px 28px;
+      background: #f7f9fb;
+      border-left: 4px solid var(--accent);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .author-box p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+      text-align: left;
+    }
+
+    .author-box strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--steel);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .page-wrap { padding: 36px 22px; }
+      figure { margin: 28px 0 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <span class="kicker">Engineering &amp; Manufacturing</span>
+
+    <h1>High-Precision Throttle Shafts for Automotive &amp; Aerospace</h1>
+
+    <div class="byline">
+      <span>By <strong>Attri Tech Machines Pvt. Ltd.</strong></span>
+      <span>March 11, 2026 &nbsp;·&nbsp; 5 min read</span>
+    </div>
+
+    <figure>
+      <img
+        class="article-image"
+        src="throttle-shaft.jpg"
+        alt="High-Precision Throttle Shafts for Automotive and Aerospace"
+      />
+      <figcaption>High-precision throttle shafts engineered for automotive and aerospace performance — manufactured by Attri Tech Machines Pvt. Ltd.</figcaption>
+    </figure>
+
+    <h2>Understanding the Role of Precision Throttle Shafts</h2>
+
+    <p class="drop-cap">Throttle shafts are mechanical components that control the opening and closing of a throttle valve within an engine system. They connect the throttle plate to the actuator mechanism, allowing precise control over airflow entering the engine. In both automotive and aerospace systems, airflow regulation directly affects combustion efficiency.</p>
+
+    <p>When the throttle shaft rotates, it adjusts the throttle plate, changing the volume of air entering the combustion chamber — directly determining engine speed, power output, and fuel efficiency. Because of this function, precision throttle shafts must be manufactured with extremely tight tolerances.</p>
+
+    <h2>Importance of Precision in Automotive Applications</h2>
+
+    <p>The automotive industry requires components that withstand constant mechanical movement, high temperatures, and continuous friction. Accurate machining ensures smooth rotational movement inside the throttle body, minimizes friction, and maintains consistent airflow control — contributing to improved engine responsiveness and better fuel efficiency.</p>
+
+    <h3>Electronic Throttle Integration</h3>
+
+    <p>Modern vehicles rely heavily on electronic throttle control systems. The mechanical shaft must integrate seamlessly with electronic sensors and actuators. A high-quality precision throttle shaft design ensures that electronic signals translate into precise mechanical movement without delay or resistance.</p>
+
+    <h2>Role in Aerospace Systems</h2>
+
+    <p>Aerospace engineering demands the highest level of precision. Aircraft engines operate under extreme conditions — high pressure, temperature variations, and intense vibration. Precision throttle shafts ensure accurate airflow regulation, maintaining perfect alignment and rotational balance even under demanding conditions.</p>
+
+    <h3>Materials &amp; Manufacturing Standards</h3>
+
+    <p>High-grade stainless steel and specialized alloys are used to provide corrosion resistance and structural strength. The production process involves CNC turning, precision grinding, and strict dimensional inspection — ensuring every shaft meets exact engineering specifications required by global OEMs and industrial manufacturers.</p>
+
+    <a class="read-more" href="https://attritechmachines.com/throttle-shaft-for-automotive-aerospace/" target="_blank" rel="noopener">
+      View Product Details at Attri Tech Machines
+    </a>
+
+    <div class="author-box">
+      <strong>Attri Tech Machines Pvt. Ltd.</strong>
+      <p>Plot No. 10 &amp; 11, Gopal Industrial Compound, Meerut Road Industrial Area, Ghaziabad, UP – 201001, India</p>
+      <p>Phone: +91-120-2701600 &nbsp;|&nbsp; Email: attritechmachines@gmail.com</p>
+      <p>Website: <a href="https://attritechmachines.com" style="color:var(--accent);">www.attritechmachines.com</a></p>
+    </div>
+
+  </div>
+</body>
+</html>
