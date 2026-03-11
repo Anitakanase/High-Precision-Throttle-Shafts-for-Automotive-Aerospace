@@ -18,8 +18,7 @@ Aerospace engineering demands the highest level of precision. Aircraft engines o
 Materials & Manufacturing Standards
 High-grade stainless steel and specialized alloys are used to provide corrosion resistance and structural strength. The production process involves CNC turning, precision grinding, and strict dimensional inspection — ensuring every shaft meets exact engineering specifications required by global OEMs and industrial manufacturers.
 
-Read more
-https://attritechmachines.com/throttle-shaft-for-automotive-aerospace/
+[Read more](https://attritechmachines.com/throttle-shaft-for-automotive-aerospace/)
 
 Author Bio
 
